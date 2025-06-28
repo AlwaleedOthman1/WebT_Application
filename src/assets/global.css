@@ -1,0 +1,103 @@
+/* Global Styles for Clean, User-Friendly Interface */
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #f7f9fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: #1a202c;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.container, .card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 900px;
+}
+
+button, .btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 0.2em 0.5em 0.2em 0;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover {
+  background: #1e40af;
+}
+
+input, select, textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0.5em;
+  font-size: 1em;
+  margin: 0.2em 0.5em 0.2em 0;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #2563eb;
+}
+
+form {
+  margin-bottom: 1.5em;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-bottom: 1.5em;
+}
+th, td {
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+.card {
+  margin-bottom: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .container, .card {
+    padding: 1em;
+    max-width: 98vw;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th, td {
+    padding: 0.5em 0.5em;
+  }
+}
+
+/* Utility */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-2 { margin-top: 2em; }
+.mb-2 { margin-bottom: 2em; } 
